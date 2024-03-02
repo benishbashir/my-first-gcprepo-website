@@ -1,6 +1,6 @@
 runtime: python39
-api_version: 1
-threadsafe: true
+# api_version: 1
+# threadsafe: true
 
 handlers:
 - url: /
