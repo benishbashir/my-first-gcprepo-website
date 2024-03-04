@@ -7,13 +7,13 @@ handlers:
   static_files: public/index.html
   upload: public/index.html
 
-- url: /
+- url: /about
   static_files: public/about.html
   upload: public/about.html
 
-- url: /
+- url: /contactus
   static_files: public/contactus.html
-  upload: public/contactus.html  
+  upload: public/contactus.html
 
 - url: /(.*)
   static_files: public/\1
