@@ -3,9 +3,17 @@ runtime: python39
 # threadsafe: true
 
 handlers:
-- url: /
+  - url: /
   static_files: public/index.html
   upload: public/index.html
+
+- url: /
+  static_files: public/about.html
+  upload: public/about.html
+
+- url: /
+  static_files: public/contactus.html
+  upload: public/contactus.html  
 
 - url: /(.*)
   static_files: public/\1
