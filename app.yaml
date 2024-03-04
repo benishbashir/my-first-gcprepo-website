@@ -2,6 +2,28 @@ runtime: python39
 # api_version: 1
 # threadsafe: true
 
+handlers:
+- url: /
+  static_files: public/index.html
+  upload: public/index.html
+
+- url: /about
+  static_files: public/about.html
+  upload: public/about.html
+
+- url: /contactus
+  static_files: public/contactus.html
+  upload: public/contactus.html
+
+- url: /(.*)
+  static_files: public/\1
+  upload: public/\1
+
+
+#runtime: python39
+# api_version: 1
+# threadsafe: true
+
 #handlers:
  # - url: /
   #static_files: public/index.html
@@ -20,23 +42,4 @@ runtime: python39
  # upload: public/(.*)
   # -------------
  
- runtime: python39
-# api_version: 1
-# threadsafe: true
 
-handlers:
-- url: /
-  static_files: public/index.html
-  upload: public/index.html
-
-- url: /about
-  static_files: public/about.html
-  upload: public/about.html
-
-- url: /contactus
-  static_files: public/contactus.html
-  upload: public/contactus.html
-
-- url: /(.*)
-  static_files: public/\1
-  upload: public/\1
