@@ -15,9 +15,9 @@ handlers:
   static_files: public/contactus.html
   upload: public/contactus.html
 
-- url: /(.*)
-  static_files: public/\1
-  upload: public/\1
+#- url: /(.*)
+#  static_files: public/\1
+#  upload: public/(.*)
 
 
 #runtime: python39
