@@ -35,33 +35,14 @@
                 Because they heard their code was going camping - it needed to be lightweight and ready to scale in the wilderness of the cloud!</p>
             
             <h2>Visit other Websites</h2>
-            <a href="https://shakirbaba.com/">Shakir's Website</a>
-            <a href="https://shakirbaba.com/website-development-in-kashmir/">Blog Post</a>
+            <a href="https://shakirbaba.com/">This is external link </a>
             
-            <!-- Embedding About Us and Contact Us sections -->
-            <h2>About Us</h2>
-            <div id="about-content"></div>
+            <br>
+            <br>
 
-            <h2>Contact Us</h2>
-            <div id="contact-content"></div>
+            <a href="contactus.html">contactUs</a>
+            <a href="about.html">About Us</a>
 
-            <script>
-                function loadAbout() {
-                    fetch('/about.html')
-                        .then(response => response.text())
-                        .then(html => {
-                            document.getElementById('about-content').innerHTML = html;
-                        });
-                }
-
-                function loadContact() {
-                    fetch('/contactus.html')
-                        .then(response => response.text())
-                        .then(html => {
-                            document.getElementById('contact-content').innerHTML = html;
-                        });
-                }
-            </script>
         </div>
     </div>
 </body>
